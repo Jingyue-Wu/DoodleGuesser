@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Doodle Guesser</title>
+		<script src="libraries/p5.js"></script>
+		<!-- <script src="libraries/p5.sound.js"></script> -->
+		<script src="sketch.js"></script>
+		<script src="drawing/line.js"></script>
+		<script src="drawing/createDrawings.js"></script>
+		<script src="drawing/updateinterface.js"></script>
+		<script src="guessing/manageGuesses.js"></script>
+		<script src="guessing/words.js"></script>
+		<script src="gamePlay/gameStages.js"></script>
+		<script src="gamePlay/gameInfo.js"></script>
+
+		
+		<script src="/socket.io/socket.io.js"></script>
+ 		 <script>
+			const socket = io.connect('http://localhost:3000');
+			//const socket = io.connect('http://192.168.0.12:3000');
+		</script>
+		
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			canvas {
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body></body>
+</html>
