@@ -19,8 +19,8 @@ function menu() {
 
 		push();
 
-		//display start button
-		fill(111, 51, 242);
+		//display start 1
+		fill(48, 132, 207);
 		noStroke();
 		rect(90, 0, 200, 60);
 		rect(165, 0, 850, 800);
@@ -31,7 +31,7 @@ function menu() {
 
 		strokeWeight(5);
 		stroke(255);
-		fill(c, c, 255);
+		fill(48, c, 255);
 		rect(375, 350, 250, 100, 10);
 
 		noStroke();
@@ -132,11 +132,11 @@ function gameOverScreen() {
 
 		// Draw game over screen
 		push();
-		fill(111, 51, 242);
+		fill(48, 132, 207);
 		noStroke();
 		rect(0, 0, 300, 800);
 
-		fill(111, 51, 242);
+		fill(48, 132, 207);
 		noStroke();
 		rect(165, 0, 850, 800);
 		rect(90, 0, 200, 60);
@@ -182,14 +182,14 @@ function gameOverScreen() {
 		}
 
 		// Back to menu button
-		var c = 138;
+		var c = 132;
 		if (mouseX > 770 && mouseX < 950 && mouseY > 480 && mouseY < 560) {
 			c = 180;
 		}
 
 		strokeWeight(5);
 		stroke(255);
-		fill(c, c, 255);
+		fill(48, c, 255);
 		rect(770, 480, 180, 80, 10);
 
 		noStroke();

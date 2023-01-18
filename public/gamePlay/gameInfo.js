@@ -13,12 +13,11 @@ function askName() {
 
 function displayPlayers() {
 	// Display leaderboard
-	// Adapted from the Leader Example
 	push();
 	let n = 0;
 
 	// Draw leaderboard titles
-	fill(138, 138, 255);
+	fill(48, 132, 207);
 	stroke(255);
 	strokeWeight(3)
 	rect(10, 70, 95, 40);
@@ -35,21 +34,24 @@ function displayPlayers() {
 
 	for (const client in clients) {
 		// Create new row for each new client joined
-		fill(138, 138, 255);
+		fill(48, 132, 207);
 		rect(10, n * 40 + 110, 95, 40);
 		rect(105, n * 40 + 110, 55, 40);
 		let aClient = clients[client];
-		fill(0, 0, 255);
 
+
+		push();
 		// Highlights client's own name on leaderboard
 		if (aClient.id === playerId) {
 			fill(5, 245, 13);
 		}
 
 		// Display names and scores together
-		push();
+		
 		noStroke();
 		textSize(17);
+
+		fill(255);
 
 		text(aClient.name, 20, n * 40 + 135);
 		text(aClient.score, 120, n * 40 + 135);

@@ -80,7 +80,7 @@ function setup() {
 }
 
 function draw() {
-	background(111, 51, 242);
+	background(48, 132, 207);
 	drawing();
 	displayPlayers();
 	menu();
